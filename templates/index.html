@@ -1,17 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>School Management System</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
+
 <body>
-    <button title="test">
-        Admin
-    </button>
-    <button>
-        User
-    </button>
+
+    <main>
+        <div>
+            <h1>School Management System</h1>
+            <div class="forms">
+                <form action="/admin" method="post" id="admin">
+                    <button type="submit">
+                        Admin
+                    </button>
+                </form>
+                <form action="/user" method="post" id="user">
+                    <button type="submit">
+                        User
+                    </button>
+                </form>
+            </div>
+        </div>
+
+    </main>
+    <footer>
+        <p>© 2023 School Management System</p>
+    </footer>
+
 </body>
+
 </html>
